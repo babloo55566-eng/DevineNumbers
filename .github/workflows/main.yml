@@ -31,10 +31,3 @@ jobs:
         with:
           name: DevineNumbers
           path: dist/DevineNumbers.exe
-
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
-        with:
-          files: dist/DevineNumbers.exe
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
