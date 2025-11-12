@@ -203,7 +203,16 @@ listbox_remedies.pack()
 tk.Button(tab_manage,text="Edit Selected",command=lambda: edit_selected_remedy(),bg="orange").pack(side="left",padx=5)
 tk.Button(tab_manage,text="Delete Selected",command=lambda: delete_selected_remedy(),bg="red").pack(side="left",padx=5)
 
-update_remedies_list()
+#def update_remedies_list():
+#    import sqlite3
+#    conn = sqlite3.connect('numerology_remedies.db')
+#    cursor = conn.cursor()
+#    cursor.execute("SELECT * FROM remedies")
+#    remedies = cursor.fetchall()
+#    conn.close()
+#    print("Remedies reloaded:", remedies)
+
+#update_remedies_list()
 
 # --- Daily Insights Tab ---
 tk.Label(tab_daily,text="Your Daily Numerology Insight").pack(pady=10)
